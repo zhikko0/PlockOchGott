@@ -1,0 +1,222 @@
+@import "./variables";
+@import "./mixins";
+@import "./header.scss";
+@import "./sebastian_footer";
+
+h2{
+    font-size:$font-size-medium;
+    font-family: $font-rubrik;
+    margin-top: 20px;
+    text-align: center;
+}
+
+p{
+    margin: 20px 0;
+    font-size: $font-size-small;
+    font-family: $font-text;
+}
+
+section:not(section.recentioner){
+    padding: 10px;
+}
+
+main{
+    margin-top: 120px;
+    background-color: $beige;
+    margin-top: 140px;
+    padding: 15px;
+    margin-bottom:30px ;
+
+}
+
+h1{
+    text-align: center;
+    padding: 20px;
+}
+ section.personal{
+    display: flex;
+    flex-direction: column;
+
+    span{
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    div.bilder{
+        flex-wrap: wrap;
+        text-align: center;
+        margin-bottom: 20px;
+
+        img{
+            max-width: 160px;
+        }
+    }
+ }
+
+section.two{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 40px;
+
+    .bilder_two{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    img{
+        min-width: 90px;
+        max-width: 250px;
+        margin: 5px;
+    }
+}
+
+div.box{
+    width: 100%;
+    text-align: center;
+}
+
+.cta-button {
+    background-color: $green;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: $font-size-medium;
+    font-family: $font-rubrik;
+    margin: 40px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.cta-button:hover {
+    background-color: $darker-green;
+}
+
+
+
+main div.wrap > a{
+    color: unset;
+}
+
+main div.wrap > a:visited{
+    color: unset;
+}
+
+section.recentioner h2.name{
+    color: white;
+}
+
+@media (min-width:800px){
+    main{
+        background-color: white;
+    }
+
+    .personal{
+        background-color: $beige;
+        border-radius: 10px;
+        max-width: 800px;
+        margin: auto;
+
+        p{
+            padding: 20px;
+        }
+
+    }
+
+    section.two{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .bilder_two{
+            min-width: 50%;
+            background-color: $beige;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+    }
+
+    .tjanster{
+        padding: 20px;
+    }
+}
+
+.recensioner_wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.recension_container {
+    background-color: #055C64; 
+    padding: 20px;
+    border-radius: 15px; 
+    width: 80%;
+    max-width: 1200px;
+}
+
+.recension_rubrik {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.recension_rubrik h2 {
+    color: #fff; 
+    font-size: 24px;
+}
+
+.recension_box {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+.recension_link {
+    text-decoration: none;
+    color: inherit; 
+    display: block;
+    width: calc(33.33% - 20px); 
+    max-width: 300px; 
+}
+
+.recensioner {
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.recensioner:hover {
+    background-color: #f0f0f0; 
+}
+
+.stjarna {
+    font-size: 20px;
+    color: #ffcc00; 
+}
+
+.datum_namn {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .recension_box {
+        justify-content: center; 
+    }
+
+    .recension_link {
+        width: calc(100% - 20px); 
+        margin-bottom: 20px; 
+    }
+}

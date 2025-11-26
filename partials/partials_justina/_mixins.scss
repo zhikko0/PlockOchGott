@@ -1,0 +1,11 @@
+@mixin font-big{
+    font-family: "Inria Serif", serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+@mixin font-medium{
+    font-family: "Inria Serif", serif;
+    font-weight: 400;
+    font-size: 20px;
+}

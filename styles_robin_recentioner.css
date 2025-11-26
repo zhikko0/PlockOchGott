@@ -1,0 +1,126 @@
+.review_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 50px;
+  justify-items: center;
+  margin-bottom: 50px;
+}
+
+.review {
+  border-radius: 20px;
+  background-color: #fff;
+  border: 3px solid black;
+  text-align: center;
+  padding: 10px;
+  width: 90%;
+  height: 150px;
+  list-style: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.review_text, .rating, .date_name {
+  font-family: "Arima";
+  font-size: 12px;
+}
+
+.rating {
+  color: #FFD700;
+  font-size: 16px;
+  margin-bottom: -20px;
+}
+
+.date_name {
+  color: rgba(128, 128, 128, 0.7);
+  margin-bottom: 5px;
+  padding-top: 5px;
+}
+
+.review_text {
+  margin-top: -5px;
+  padding: 0;
+}
+
+.google_wrapper {
+  margin: auto;
+  width: 400px;
+  height: 220px;
+  border-radius: 20px;
+  background-color: #055C64;
+  color: #fff;
+  padding: 20px;
+  position: relative;
+}
+
+.google_innerwrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.google_header {
+  display: flex;
+  width: 50px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.google_logo_text {
+  font-size: 25px;
+  display: inline-flex;
+  margin: -40px 0 0 60px;
+}
+
+.arrow_icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.arrow_icon:hover {
+  transform: scale(1.15);
+}
+
+.omdome {
+  margin-top: 10px;
+}
+
+#omdome_text {
+  font-size: 15px;
+  margin-bottom: 90px;
+  padding-left: 10px;
+}
+
+#omdome_rating {
+  font-size: 15px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.omdome_rating_count {
+  color: rgb(122, 122, 122);
+}
+
+.recension_wrapper {
+  margin: 20px auto;
+  width: 400px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #055C64;
+  text-align: center;
+  padding: 7px;
+  transition: background-color 0.3s ease;
+}
+
+.recension_wrapper:hover {
+  background-color: #003d42;
+  cursor: pointer;
+}
+
+.recension_text {
+  color: #fff;
+}/*# sourceMappingURL=styles_robin_recentioner.css.map */

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_justina.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Produkter</title>
+    <link rel="stylesheet" href="styles_sebastian.css">
+    <link rel="icon" type="image/png" href="bilder_och_iconer/favico.ico">
+</head>
+<body>
+    <header class="header">
+        <div class="colum">
+            <a href="index.html" aria-label="Huvud sida" tabindex="0"><img class="logo" src="./bilder_och_iconer/Plock_och_Gott_logo.png" alt="" style="width:250px;"></a>
+        </div>
+        <div class="colum">
+            <input class="side-menu" type="checkbox" id="side-menu"/>
+            <label class="menu-button" for="side-menu" aria-label="Meny"><span class="menu-line"></span></label>
+            <nav class="nav" aria-label="Huvud Meny"> 
+                <ul class="menu">
+                    <li><a class="active" href="produkter.html" aria-current="page">Produkter</a></li>
+                    <li><a href="tjanster.html">Tjänster</a></li>
+                    <li><a href="recensioner.html">Referenser</a> </li>
+                    <li><a href="kontakta_oss.html">Kontakta oss</a></li>
+                    <li><a href="om_oss.html" >Om oss</a></li>
+                    <li><a href="#Varukorg">Varukorg</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Våra produkter</h1>
+        <div class="products">
+            <div class="green">
+                <div class="buffe-menu">
+                  <div class="image-container image-container-fixed">
+                   <img src="./bilder_och_iconer/italian_buffe.png" alt="Italiensk buffé bild">
+                  </div>
+                        <div class="title-container">
+                            <h2 class="h2-meny" style="justify-content: left;">Italiensk buffé meny</h2>
+                            <h3>Min. 10 pers. 595 kr/person</h3>
+                        </div>
+
+                                    <p>Italienska charkuterier</p>
+                                    <p>Marinerade oliver</p>
+                                    <p>Mozzarella, tomat, basilika, balsamvinäger</p>
+                                    <p>Salvia marinerad kyckling</p>
+                                    <p>Tapenade & kronärtskockskräm</p>
+                                    <p>Pizza</p>
+                                    <p>Pasta pesto med kronärtskocka & ruccola</p>
+                                    <p>Två italienska ostar, fikonmarmelad & grissini</p>
+                                    <p>Focaccia & körsbärstomater</p>
+                                
+                                    <div class="label-select">
+                                
+                                        <select id="amount1">
+                                          <option value="Välj antal:" selected>Välj antal:</option>
+                                          <option value="20">20</option>
+                                          <option value="21">21</option>
+                                          <option value="22">22</option>
+                                          <option value="23">23</option>
+                                          <option value="24">24</option>
+                                          <option value="25">25</option>
+                                          <option value="26">26</option>
+                                          <option value="27">27</option>
+                                          <option value="28">28</option>
+                                          <option value="29">29</option>
+                                          <option value="30">30</option>
+                                          <option value="31+">31+</option>
+                                        </select>
+                                    
+                                            <button class="boka">Boka</button>
+                                    </div>
+                </div>
+            </div>
+
+            <div class="green">
+                <div class="buffe-menu">
+                    
+                                <div class="image-container">
+                                    <img src="./bilder_och_iconer/Japanese_buffe.png" alt="Japansk buffé bild">
+                                 
+                                </div>
+                                      <div class="title-container">
+                                          <h2 class="h2-meny" style="justify-content: left;">Japansk buffé meny</h2>
+                                          <h3>Min. 10 pers. 525kr/person</h3>
+                                      </div>
+
+                                <p>Nudelsallad med pak shoy och chili</p>
+                                <p>Syrade grönsaker med grillad tonfisk</p>
+                                <p>Heta chiliräkor</p>
+                                <p>Sashimi lax med misodressing</p>
+                                <p>Sallad på spenat och alger</p>
+                                <p>Färska vårrullar med dipp</p>
+                                <p>Anka med smak av blodapelsin och ingefära</p>
+                                <p>Chili & sojarostad broccoli</p>
+                                <p>Laxsashimi med ingefära, lime & sesam</p>
+                                <div class="label-select">
+                                
+                                    <select id="amount2">
+                                      <option value="Välj antal:" selected>Välj antal:</option>
+                                      <option value="20">20</option>
+                                      <option value="21">21</option>
+                                      <option value="22">22</option>
+                                      <option value="23">23</option>
+                                      <option value="24">24</option>
+                                      <option value="25">25</option>
+                                      <option value="26">26</option>
+                                      <option value="27">27</option>
+                                      <option value="28">28</option>
+                                      <option value="29">29</option>
+                                      <option value="30">30</option>
+                                      <option value="31+">31+</option>
+                                    </select>
+                                
+                                        <button class="boka">Boka</button>
+                                </div>
+                </div>
+            </div>
+
+            <div class="green">
+                <div class="buffe-menu">
+                    <div class="image-container">
+                        <img src="./bilder_och_iconer/french_buffe.png" alt="Franska buffé bild">
+                                 
+                    </div>
+                          <div class="title-container">
+                              <h2 class="h2-meny" style="justify-content: left;">Franska buffé meny</h2>
+                              <h3>Min. 10 pers. 595 kr/person</h3>
+                          </div>
+                    
+                                <p>Konfiterad grissida</p>
+                                <p>Rilett oxsvans och schalottenlök</p>
+                                <p>Ankleverterine med calvadosäpplen</p>
+                                <p>Tripes a la Mode de Caen</p>
+                                <p>Marmite (klassisk skaldjursgryta)</p>
+                                <p>Sallad med äpplen, valnötter och camembert</p>
+                                <p>Färskost med örter i burk</p>
+                                <p>Grönpepparpaté</p>
+                                <p>Blåmögelost</p>
+
+                                <div class="label-select">
+                                
+                                    <select id="amount3">
+                                      <option value="Välj antal:" selected>Välj antal:</option>
+                                      <option value="20">20</option>
+                                      <option value="21">21</option>
+                                      <option value="22">22</option>
+                                      <option value="23">23</option>
+                                      <option value="24">24</option>
+                                      <option value="25">25</option>
+                                      <option value="26">26</option>
+                                      <option value="27">27</option>
+                                      <option value="28">28</option>
+                                      <option value="29">29</option>
+                                      <option value="30">30</option>
+                                      <option value="31+">31+</option>
+                                    </select>
+                                
+                                        <button class="boka">Boka</button>
+                                </div>
+                </div>
+            </div>
+
+            <div class="green">
+                <div class="buffe-menu">
+                    <div class="image-container">
+                        <img src="./bilder_och_iconer/West_Coast_buffe.png" alt="Västkust buffé bild">
+                                 
+                    </div>
+                          <div class="title-container">
+                              <h2 class="h2-meny" style="justify-content: left;">Västkust buffé meny</h2>
+                              <h3>Min. 10 pers. 645 kr/person</h3>
+                          </div>
+        
+                                <p>Liten toast Skagen med löjrom</p>
+                                <p>Havskräftor med aioli</p>
+                                <p>Sommarsallad med rädisa</p>
+                                <p>Gravad lax med hovmästarsås</p>
+                                <p>Kallrökt lax med gräslök & smetana</p>
+                                <p>3 sorters sill</p>
+                                <p>Dillkokt färskpotatis</p>
+                                <p>Bröd, smör, ost</p>
+
+                                <div class="label-select">
+                                
+                                    <select id="amount4">
+                                      <option value="Välj antal:" selected>Välj antal:</option>
+                                      <option value="20">20</option>
+                                      <option value="21">21</option>
+                                      <option value="22">22</option>
+                                      <option value="23">23</option>
+                                      <option value="24">24</option>
+                                      <option value="25">25</option>
+                                      <option value="26">26</option>
+                                      <option value="27">27</option>
+                                      <option value="28">28</option>
+                                      <option value="29">29</option>
+                                      <option value="30">30</option>
+                                      <option value="31+">31+</option>
+                                    </select>
+                                
+                                        <button class="boka">Boka</button>
+                                </div>
+                </div>
+            </div>
+
+            <div class="green">
+                <div class="buffe-menu">
+                    <div class="image-container">
+                        <img src="./bilder_och_iconer/seafood_buffe.png" alt="Skaldjur buffé bild">
+                                 
+                    </div>
+                          <div class="title-container">
+                              <h2 class="h2-meny" style="justify-content: left;">Skaldjur buffé meny</h2>
+                              <h3>Min. 10 pers. 1495 kr/person</h3>
+                          </div>
+                    
+                                <p>1/2 st hummer</p>
+                                <p>Scampiceviche</p>
+                                <p>2 st ostron Fine de Claire</p>
+                                <p>2 st havskräftor</p>
+                                <p>100 g färska räkor</p>
+                                <p>100 g rökta räkor</p>
+                                <p>Halv krabba med majonnäs</p>
+                                <p>Rhode Island</p>
+                                <p>Levainbröd</p>
+
+                                <div class="label-select">
+                                
+                                    <select id="amount5">
+                                      <option value="Välj antal:" selected>Välj antal:</option>
+                                      <option value="20">20</option>
+                                      <option value="21">21</option>
+                                      <option value="22">22</option>
+                                      <option value="23">23</option>
+                                      <option value="24">24</option>
+                                      <option value="25">25</option>
+                                      <option value="26">26</option>
+                                      <option value="27">27</option>
+                                      <option value="28">28</option>
+                                      <option value="29">29</option>
+                                      <option value="30">30</option>
+                                      <option value="31+">31+</option>
+                                    </select>
+                                
+                                        <button class="boka">Boka</button>
+                                </div>
+                </div>
+            </div>
+
+            <div class="green">
+                <div class="buffe-menu">
+                    <div class="image-container">
+                        <img src="./bilder_och_iconer/vegetarian_buffe.png" alt="Vegetarisk buffé bild">
+                                 
+                    </div>
+                          <div class="title-container">
+                              <h2 class="h2-meny" style="justify-content: left">Vegetarisk buffé meny</h2>
+                              <h3>Min. 20 pers. 325 kr/person</h3>
+                          </div>
+                    
+                                <p>Couscoussallad med grillade grönsaker</p>
+                                <p>Tåliga geranium</p>
+                                <p>Vegetarisk lassange med fetaost och spenat</p>
+                                <p>En solros</p>
+                                <p>Sallad med edamerbönor, sharlottenlök, babyspenat</p>
+                                <p>Trendiga dahlian</p>
+                                <p>Rostade rotsaker med chimichurri</p>
+                                <p>Ljuvliga pionen</p>
+
+                                <div class="label-select">
+                                
+                                    <select id="amount6">
+                                      <option value="Välj antal:" selected>Välj antal:</option>
+                                      <option value="20">20</option>
+                                      <option value="21">21</option>
+                                      <option value="22">22</option>
+                                      <option value="23">23</option>
+                                      <option value="24">24</option>
+                                      <option value="25">25</option>
+                                      <option value="26">26</option>
+                                      <option value="27">27</option>
+                                      <option value="28">28</option>
+                                      <option value="29">29</option>
+                                      <option value="30">30</option>
+                                      <option value="31+">31+</option>
+                                    </select>
+                                
+                                        <button class="boka">Boka</button>
+                                </div>
+                       
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-container ">
+            <div class="left-align footer-column  no-spacing ">
+                
+                <ul >
+                    <li><a href="produkter.html">Produkter</a></li>
+                    <li><a href="tjanster.html">Tjänster</a></li>
+                    <li><a href="recensioner.html">Referenser</a></li>
+                    <li><a href="om_oss.html">Om oss</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Coockiepolicy</a></li>
+                    <li><a href="#">Integritetspolicy</a></li>
+                    <li><a href="#">Coockieinställningnar</a></li>
+
+                </ul>
+            </div>
+            
+            <div class="center-alight footer-column">
+
+                <img class="logo" src="./bilder_och_iconer/Logo.png" alt="Plock & Gott"  width="500">
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./bilder_och_iconer/instagram_logo.png" alt="Instagram" width="70" height="70"></a>
+                    <a href="https://www.facebook.com" target="_blank"><img src="./bilder_och_iconer/fb_logo.png" alt="Facebook" width="70" height="70"></a>
+                    <a href="https://www.gmail.com" target="_blank"><img src="./bilder_och_iconer/mail_logo.png" alt="Email" width="70" height="70"></a>
+                </div>
+            </div>
+
+            <div class="footer-column  contact-column">
+                <p class="contact-item"><img src="./bilder_och_iconer/mail_logo.png" alt="Mejla oss" width="20" height="20">plock_och_gott@gott.se</p>
+                <p class="contact-item"><img src="./bilder_och_iconer/phoneIcon.png" alt="Ring oss" width="20" height="20">+46768131111</p>
+                <p class="contact-item"><img src="./bilder_och_iconer/locationIcon.png" alt="Hitta oss" width="20" height="20">Nackademigatan 120</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2023-2024 Plock & Gott.</p>
+        </div>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,166 @@
+
+*{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+     @include font-medium();
+}
+ul{
+    list-style: none;
+    padding-inline-start: 0px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: -7px;
+    unicode-bidi: isolate;
+}
+
+.header{
+    background-color: $green;
+    box-shadow: 1px 1px 5px 0px $darker-green;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.logo{
+    margin: 0px 20px;
+}
+
+div.colum{
+    display: flex;
+    align-items: center;
+}
+
+.nav{
+    position: absolute;
+    display: flex;
+    bottom: -80px;
+    right: 5px;
+    background-color: $green;
+    overflow: hidden;
+    box-shadow: #033337 -5px 8px 10px;
+}
+
+.menu a{
+    display: block;
+    height: 45px;
+    padding: 10px 20px;
+    color: $beige;
+    text-align: right;
+    @include font-medium();
+}
+.menu a:hover{
+    background-color: $darker-green;
+    width: 90%;
+    position: relative;
+    left: -30px;
+
+}
+.nav{
+    max-height:0;
+}
+
+.menu-button{
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}
+
+.menu-line {
+    background: $beige;
+    display: block;
+    height: 2px;
+    position: relative;
+    margin-left: -10px;
+    width: 30px;
+
+}
+
+.menu-line::before,
+.menu-line::after{
+    background: $beige;
+    content: '';
+    display: block;
+    height: 130%;
+    position: absolute;
+    transition: all .7s;
+    width: 100%;
+}
+.menu-line::before{
+    top: 10px;
+}
+.menu-line::after{
+    top: -10px;
+}
+
+.side-menu {
+    display: none;
+} 
+
+.side-menu:checked ~ nav{
+    max-height: fit-content;
+    position:absolute;
+    top: 90px;
+}
+.side-menu:checked ~ .menu-button .menu-line {
+    background: transparent;
+}
+.side-menu:checked ~ .menu-button .menu-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+.side-menu:checked ~ .menu-button .menu-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+
+@media (min-width: 820px) {
+
+    .header{
+        display: block;
+        height: 120px;
+    }
+
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        width: fit-content;
+        background-color: transparent;
+        margin: auto;
+        box-shadow: none;
+    }
+    .menu li{
+        float: left;
+    }
+
+
+    .menu a:hover{
+        background-color: transparent;
+        color: $dark-beige;
+    }
+
+    .menu a.active{
+        color:#fac279 ;
+        font-style: italic;
+        
+    }
+
+    a{
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .menu-button{
+        display: none;
+    }
+
+}
+

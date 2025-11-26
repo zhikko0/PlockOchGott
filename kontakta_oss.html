@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakta oss</title>
+    <link rel="stylesheet" href="styles_justina.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="bilder_och_iconer/favico.ico">
+</head>
+<body>
+    <header class="header">
+        <div class="colum">
+            <a href="index.html" aria-label="Huvud sida" tabindex="0"><img class="logo" src="./bilder_och_iconer/Plock_och_Gott_logo.png" alt="" style="width:250px;"></a>
+        </div>
+        <div class="colum">
+            <input class="side-menu" type="checkbox" id="side-menu"/>
+            <label class="menu-button" for="side-menu" aria-label="Meny"><span class="menu-line"></span></label>
+            <nav class="nav" aria-label="Huvud Meny"> 
+                <ul class="menu">
+                    <li><a href="produkter.html">Produkter</a></li>
+                    <li><a href="tjanster.html">Tjänster</a></li>
+                    <li><a href="recensioner.html">Referenser</a> </li>
+                    <li><a class="active" href="#" aria-current="page">Kontakta oss</a></li>
+                    <li><a href="om_oss.html" >Om oss</a></li>
+                    <li><a href="#Varukorg">Varukorg</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="wrap">
+            <h1>Kontakta oss</h1>
+            <div class="column">
+                <section  class="form">
+                    <h2>Kontakt/Bäställningsformulär</h2>
+                    <form method="post" class="field">
+                        <label for="city">Välj din stad*
+                            <select class="text" name="city" id="city" required>
+                                <option value="" disabled selected hidden>Välj din stad</option>
+                                <option value="Solna">Solna</option>
+                                <option value="Nacka">Nacka</option>
+                            </select>
+                        </label>
+                        <label for="name">Namn*
+                            <input class="text" type="text" id="name" name="namn" required>
+                        </label>
+                        <label for="last_name">Efternamn*
+                            <input class="text" type="text" id="last_name" name="efternamn" required>
+                        </label>
+                        <label for="mail">E-mail*
+                            <input class="text" type="email" id="mail" name="mail" required>
+                        </label>
+                        <label  for="phone">Telefon*
+                            <input class="text" type="tel" id="phone" name="telefon-nummer" required>
+                        </label>
+                        <label for="message">Medelande*
+                            <textarea class="text" id="message" name="medelande" required rows="8" cols="10" placeholder="Skriv ditt meddelande här..."></textarea>
+                        </label>
+                        <br>
+                        <label for="date" class="wrap-time">Upphämtnings dag*
+                            <input class="text small" type="date" name="date" id="date" required>
+                        </label>
+                        <label for="time" class="wrap-time">Upphämtnings tid
+                            <input class="text small" type="time" name="time" id="time" required>
+                        </label>
+                        <br>
+                        <div class="wrap-p">
+                            <label for="policy" id="wrap-l" >
+                                <input class="text" type="checkbox" id="policy" required>
+                                Jag accepterar integritetspolicyn.
+                            </label>
+                        </div>
+                        <button class="text send" type="submit">Skicka</button>
+                    </form>
+                </section>
+            </div>
+            <div class="column">
+                <img id="Plock_och_Gott_Restaurant" src="/bilder_och_iconer/Plock_och_Gott_Restaurant.jpg" alt="Bild av Plock och Gott Restaurng ">
+                <section class="info">
+                    <h2>Kontakt information</h2>
+                    <div>
+                        <span>Mail: <a href="mailto:Plock_och_Gott@gott.se">Plock_och_Gott@gott.se</a></span>
+                        <span>Tel: <a href="tel:0768131111"></a>0768131111</span>
+                        <span>Address: Nackademingatan 120, Solna</span>
+                    </div>
+                    <img class="company_logo" src="/bilder_och_iconer/Plock_och_Gott_logo.png" alt="Företags Plock och Gott logo">
+                    <div class="links">
+                        <a href="https://www.facebook.com/"><img class="icon" src="/bilder_och_iconer/fb_logo.png" alt="Knapp för att gå till facebook"></a>
+                        <a href="https://www.instagram.com/"><img class="icon" src="/bilder_och_iconer/instagram_logo.png" alt="Knapp för att gå till instagram"></a>
+                        <a href="https://mail.google.com/"><img class="icon" src="/bilder_och_iconer/mail_logo.png" alt="Knapp för att gå till mail"></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container ">
+            <div class="left-align footer-column  no-spacing ">
+                
+                <ul >
+                    <li><a href="produkter.html">Produkter</a></li>
+                    <li><a href="tjanster.html">Tjänster</a></li>
+                    <li><a href="recensioner.html">Referenser</a></li>
+                    <li><a href="om_oss.html">Om oss</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Coockiepolicy</a></li>
+                    <li><a href="#">Integritetspolicy</a></li>
+                    <li><a href="#">Coockieinställningnar</a></li>
+
+                </ul>
+            </div>
+            
+            <div class="center-alight footer-column">
+
+                <img class="logo" src="/bilder_och_iconer/Logo.png" alt="Plock & Gott"  width="500">
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="/bilder_och_iconer/instagram_logo.png" alt="Instagram" width="70" height="70"></a>
+                    <a href="https://www.facebook.com" target="_blank"><img src="/bilder_och_iconer/fb_logo.png" alt="Facebook" width="70" height="70"></a>
+                    <a href="https://www.gmail.com" target="_blank"><img src="/bilder_och_iconer/mail_logo.png" alt="Email" width="70" height="70"></a>
+                </div>
+            </div>
+
+            <div class="footer-column  contact-column">
+                <p class="contact-item"><img src="/bilder_och_iconer/mail_logo.png" alt="Mejla oss" width="20" height="20">plock_och_gott@gott.se</p>
+                <p class="contact-item"><img src="/bilder_och_iconer/phoneIcon.png" alt="Ring oss" width="20" height="20">+46768131111</p>
+                <p class="contact-item"><img src="/bilder_och_iconer/locationIcon.png" alt="Hitta oss" width="20" height="20">Nackademigatan 120</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2023-2024 Plock & Gott.</p>
+        </div>
+    </footer>
+</body>
+</html>
